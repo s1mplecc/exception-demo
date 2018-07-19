@@ -25,4 +25,12 @@ public class User {
     User(User userWithoutId) {
         this(userWithoutId.username, userWithoutId.phone, userWithoutId.age);
     }
+
+    public boolean checkAgeIsLegal() {
+        return this.age == null || this.age >= 1;
+    }
+
+    public boolean checkUsernameIsNotEmpty() {
+        return username != null && !"".equals(username.trim());
+    }
 }

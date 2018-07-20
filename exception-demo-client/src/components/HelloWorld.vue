@@ -31,8 +31,8 @@
     data() {
       return {
         user: {
-          username: '',
-          phone: '',
+          username: null,
+          phone: null,
           age: null
         },
         users: []
